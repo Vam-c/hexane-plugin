@@ -1,12 +1,21 @@
-import './App.css'
+import { useState } from "react";
+import styles from "./App.module.css";
+import Chatbot from "./components/Chatbot";
 
-function App() {
+const App = () => {
+    // hide state hides the Chatbot interface.
+    const [hide, setHide] = useState(true);
 
-  return (
-    <>
-    hello
-    </>
-  )
-}
+    return (
+        <>
+            {!hide && <Chatbot />}
 
-export default App
+            {/* Chat icon to toggle chat interface. */}
+            <div id="chat-icon" className={styles.chatIcon} onClick={() => setHide(!hide)}>
+                <span>H</span>
+            </div>
+        </>
+    );
+};
+
+export default App;

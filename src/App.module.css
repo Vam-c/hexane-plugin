@@ -1,0 +1,27 @@
+.chatIcon {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    background-color: beige;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: larger;
+    font-weight: 600;
+    font-family: monospace;
+    color: brown;
+    transition: all 0.3s;
+}
+
+.chatIcon:hover {
+    scale: 1.2;
+    box-shadow: 4px 4px 8px brown;
+    font-size: xx-large;
+    color: darkred;
+}

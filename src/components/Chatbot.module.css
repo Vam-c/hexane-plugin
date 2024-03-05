@@ -31,19 +31,20 @@
     color: brown;
     text-align: center;
     padding: 5px;
+    height: 10%;
 }
 
-.center {
-    display: flex;
-    align-items: center;
+.defaultMessage { 
     padding: 10px;
 }
 
 .input {
+    height: 10%;
     padding: 10px;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     column-gap: 5px;
 }
 
@@ -57,6 +58,7 @@
 }
 
 .input button {
+    height: 30px;
     font-family: monospace;
     font-weight: 600;
     border: 1px solid maroon;
@@ -71,7 +73,21 @@ input:focus-visible {
 }
 
 .chatSection {
-    flex-grow: 1;
+    height: 80%;
+    width: 100%;
+    overflow-y: auto;
     background-color: white;
-    padding: 3px;
+}
+
+.responseContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 20px;
+    padding: 10px;
+}
+
+.responseContainer > .query {
+    font-size: large;
 }
